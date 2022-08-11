@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <div :style="backgroundDiv">
       <v-row align="center" justify="center">
         <v-col cols="12" sm="10">
@@ -95,11 +95,9 @@
                         >
                       </div>
                     </div>
-                    ​
                   </v-col>
-                  ​
+
                   <v-col cols="12" md="6">
-                    ​
                     <v-card-text class="mt-12">
                       <h4 class="text-center">
                         Regístrese para obtener una cuenta
@@ -108,63 +106,46 @@
                         Vamos a prepararlo todo para que pueda comenzar
                       </h5>
                       <v-row align="center" justify="center">
-                        ​
                         <v-col cols="12" sm="8">
-                          ​
                           <v-row>
-                            ​
                             <v-col cols="12" sm="6">
-                              ​
                               <v-text-field
                                 label="Primer Nombre"
                                 outlined
                                 dense
                                 color="blue"
                                 autocomplete="false"
-                                class="mt-4"
                               />
-                              ​
                             </v-col>
-                            ​
-                            <v-col cols="12" sm="6">
-                              ​
+                            <v-col  cols="12" sm="6">
                               <v-text-field
                                 label="Segundo Nombre"
                                 outlined
                                 dense
                                 color="blue"
                                 autocomplete="false"
-                                class="mt-4"
                               />
-                              ​
                             </v-col>
-                            ​
                           </v-row>
-                          ​
+
                           <v-row>
-                            ​
                             <v-col cols="12" sm="6">
-                              ​
                               <v-text-field
                                 label="Primer Apellido"
                                 outlined
                                 dense
                                 color="blue"
                                 autocomplete="false"
-                                class="mt-4"
                               />
-                              ​
                             </v-col>
-                            ​
+
                             <v-col cols="12" sm="6">
-                              ​
                               <v-text-field
                                 label="Segundo Apellido"
                                 outlined
                                 dense
                                 color="blue"
                                 autocomplete="false"
-                                class="mt-4"
                               />
                             </v-col>
                             ​
@@ -177,7 +158,7 @@
                             color="blue"
                             autocomplete="false"
                           />
-                          ​
+
                           <v-text-field
                             label="Contraseña"
                             outlined
@@ -186,16 +167,13 @@
                             autocomplete="false"
                             type="password"
                           />
-                          ​
+
                           <v-btn color="blue" dark block tile
                             >INSCRIBIRSE</v-btn
                           >
-                          ​
                         </v-col>
                         <div>​</div>
-                        ​
                       </v-row>
-                      ​
                     </v-card-text>
                     ​
                   </v-col>
@@ -219,14 +197,14 @@
 
 <script>
 export default {
-    name: "InicioSesion",
-    components: {},
-    data(){
-        return {
-       step: 1
-        };
-    },
-}
+  name: "InicioSesion",
+  components: {},
+  data() {
+    return {
+      step: 1,
+    };
+  },
+};
 </script>
 
 <style scoped>

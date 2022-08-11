@@ -6,13 +6,25 @@
           <v-img contain max-height="75" src="../assets/img/logo.png"></v-img>
         </v-app-bar-nav-icon>
         <v-spacer></v-spacer>
-        <v-btn class="botonposition" color="white" text v-on:click="enlace()"
+        <v-btn
+          class="botonposition"
+          color="white"
+          text
+          v-on:click="enlace(ruta[0])"
           >HOME</v-btn
         >
-        <v-btn class="botonposition" color="white" text v-on:click="enlace()"
+        <v-btn
+          class="botonposition"
+          color="white"
+          text
+          v-on:click="enlace(ruta[1])"
           >AMALENSEGUA</v-btn
         >
-        <v-btn class="botonposition" color="white" text v-on:click="enlace()"
+        <v-btn
+          class="botonposition"
+          color="white"
+          text
+          v-on:click="enlace(ruta[2])"
           >CULTURA SORDA</v-btn
         >
         <v-btn
@@ -20,7 +32,7 @@
           style="border: 2px solid #3737cd"
           color="white"
           text
-          v-on:click="enlace()"
+          v-on:click="enlace(ruta[3])"
           >CONTACTANOS</v-btn
         >
       </v-app-bar>
@@ -35,20 +47,15 @@ export default {
   comments: {},
   props: [],
   data: () => ({
-    icons: [
-      "fab fa-facebook",
-      "fab fa-twitter",
-      "fab fa-google-plus",
-      "fab fa-linkedin",
-      "fab fa-instagram",
-    ],
+    ruta: ["/home", "/amalensegua", "/culturasorda", "/contacto"],
   }),
   methods: {
-    enlace() {
-      this.$router.push({ path: "/home" });
-      this.$router.push({ path: "/amalensegua" });
-      this.$router.push({ path: "/culturasorda" });
-      this.$router.push({ path: "/contacto" });
+    enlace(irRuta) {
+      // console.log("irRuta: " + irRuta);
+      // console.log("fullPath: " + this.$router.app.$route.fullPath);
+      if (irRuta != this.$router.app.$route.fullPath) {
+        this.$router.push({ path: irRuta });
+      }
     },
   },
   components: { Home },
