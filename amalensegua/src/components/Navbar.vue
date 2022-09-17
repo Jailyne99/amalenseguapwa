@@ -41,8 +41,8 @@
 </template>
 
 <script>
-import Home from "@/views/Home.vue";
-export default {
+  import Home from "@/views/Home.vue";
+    export default {
   name: "NavBar",
   comments: {},
   props: [],
@@ -59,17 +59,17 @@ export default {
     },
   },
   components: { Home },
-};
+  };
 </script>
 
 <style>
-.botonposition {
-  left: -395px;
-}
-.botoncontacto {
-  left: -40px;
-}
-.mr-3 {
-  top: 25px;
-}
+  .botonposition {
+    left: -395px;
+  }
+  .botoncontacto {
+    left: -40px;
+  }
+  .mr-3 {
+    top: 25px;
+  }
 </style>

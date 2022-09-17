@@ -6,13 +6,14 @@ import InicioSesion from "../views/InicioSesion.vue";
 import Amalensegua from "../views/Amalensegua.vue";
 import CulturaSorda from "../views/CulturaSorda.vue";
 import Contacto from "../views/Contacto.vue";
+import Admin from "../views/Admin.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "app",
+    name: "App",
     component: App,
   },
   {
@@ -39,6 +40,11 @@ const routes = [
     path: "/contacto",
     name: "Contacto",
     component: Contacto,
+  },
+  {
+    path: "/admin",
+    name: "Admin",
+    component: Admin,
   },
 
 ];
