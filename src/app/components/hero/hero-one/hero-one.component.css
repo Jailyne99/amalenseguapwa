@@ -1,0 +1,16 @@
+/* Para dispositivos xs y sm */
+@media (max-width: 576px) {
+    .welcome-thumb img {
+        top: 30px;
+        margin-bottom: 50px;
+        max-width: 250px;
+    }
+}
+
+/* Para dispositivos md en adelante */
+@media (min-width: 768px) {
+    .img-max-width {
+        margin-top: -50px!important;
+        max-width: 900px;
+    }
+}
